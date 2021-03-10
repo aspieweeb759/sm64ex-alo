@@ -18,9 +18,9 @@ extern s8 gFlyingCarpetState;
     name##_Index, \
 
 
-enum Custom_Skybox_Indices{
+/*enum Custom_Skybox_Indices{
 #include "textures/skyboxes/Skybox_Rules.ld"
-};
+};*/
 
 #undef MIO0_SEG
 #endif
