@@ -32,7 +32,7 @@ static void gfx_3ds_init(UNUSED const char *game_name)
 
     bool useAA = false;
 #ifdef N3DS_USE_ANTIALIASING
-    useAA = true;
+    useAA = false;
 #endif
     bool useWide = false;
 #ifdef N3DS_USE_WIDE_800PX
