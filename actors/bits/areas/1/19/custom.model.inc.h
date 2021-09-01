@@ -1,0 +1,50 @@
+#ifndef bits_19_model_HEADER_H
+#define bits_19_model_HEADER_H
+#include "types.h"
+extern Vtx VB_bits_geo_0005C8_0x700fce8[];
+extern Vtx VB_bits_geo_0005C8_0x700fde8[];
+extern Vtx VB_bits_geo_0005C8_0x700fed8[];
+extern Vtx VB_bits_geo_0005C8_0x700ffc8[];
+extern Vtx VB_bits_geo_0005C8_0x70100c8[];
+extern Vtx VB_bits_geo_0005C8_0x70101c8[];
+extern Vtx VB_bits_geo_0005C8_0x7010208[];
+extern Vtx VB_bits_geo_0005C8_0x7010308[];
+extern Vtx VB_bits_geo_0005C8_0x70103f8[];
+extern Vtx VB_bits_geo_0005C8_0x70104d8[];
+extern Vtx VB_bits_geo_0005C8_0x70105c8[];
+extern Vtx VB_bits_geo_0005C8_0x70106c8[];
+extern Vtx VB_bits_geo_0005C8_0x70107a8[];
+extern Vtx VB_bits_geo_0005C8_0x7010888[];
+extern Vtx VB_bits_geo_0005C8_0x7010978[];
+extern Vtx VB_bits_geo_0005C8_0x7010a68[];
+extern Vtx VB_bits_geo_0005C8_0x7010b58[];
+extern Vtx VB_bits_geo_0005C8_0x7010c48[];
+extern Vtx VB_bits_geo_0005C8_0x7010d38[];
+extern Vtx VB_bits_geo_0005C8_0x7010e18[];
+extern Vtx VB_bits_geo_0005C8_0x7010ef8[];
+extern Vtx VB_bits_geo_0005C8_0x7010fe8[];
+extern Vtx VB_bits_geo_0005C8_0x70110c8[];
+extern Vtx VB_bits_geo_0005C8_0x70111b8[];
+extern Vtx VB_bits_geo_0005C8_0x7011298[];
+extern Vtx VB_bits_geo_0005C8_0x7011388[];
+extern Vtx VB_bits_geo_0005C8_0x7011478[];
+extern Vtx VB_bits_geo_0005C8_0x7011558[];
+extern Vtx VB_bits_geo_0005C8_0x7011648[];
+extern Vtx VB_bits_geo_0005C8_0x7011738[];
+extern Vtx VB_bits_geo_0005C8_0x7011838[];
+extern Vtx VB_bits_geo_0005C8_0x7011938[];
+extern Vtx VB_bits_geo_0005C8_0x7011a38[];
+extern Vtx VB_bits_geo_0005C8_0x7011b38[];
+extern Vtx VB_bits_geo_0005C8_0x7011c38[];
+extern Vtx VB_bits_geo_0005C8_0x7011d38[];
+extern Vtx VB_bits_geo_0005C8_0x7011e38[];
+extern u8 bits_geo_0005C8__texture_09007000[];
+extern u8 bits_geo_0005C8__texture_09001800[];
+extern u8 bits_geo_0005C8__texture_07000000[];
+extern u8 bits_geo_0005C8__texture_07001000[];
+extern Gfx DL_bits_geo_0005C8_0x70128f0[];
+extern Gfx DL_bits_geo_0005C8_0x7011ef8[];
+extern Gfx DL_bits_geo_0005C8_0x7012098[];
+extern Gfx DL_bits_geo_0005C8_0x7012758[];
+extern Gfx DL_bits_geo_0005C8_0x7012898[];
+#endif
