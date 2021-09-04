@@ -1,0 +1,4 @@
+#ifndef unk_pss_0403e348_unk_pss_0403e348_model_HEADER_H
+#define unk_pss_0403e348_unk_pss_0403e348_model_HEADER_H
+#include "types.h"
+#endif

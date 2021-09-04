@@ -1,0 +1,4 @@
+#ifndef unk_None_0403e348_unk_None_0403e348_model_HEADER_H
+#define unk_None_0403e348_unk_None_0403e348_model_HEADER_H
+#include "types.h"
+#endif
