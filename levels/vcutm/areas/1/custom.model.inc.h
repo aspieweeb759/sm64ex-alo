@@ -1,0 +1,50 @@
+#ifndef VCUTM_1_HEADER_H
+#define VCUTM_1_HEADER_H
+#include "types.h"
+extern Vtx VB_vcutm_1_0xe002850[];
+extern Vtx VB_vcutm_1_0xe002940[];
+extern Vtx VB_vcutm_1_0xe002a30[];
+extern Vtx VB_vcutm_1_0xe002b20[];
+extern Vtx VB_vcutm_1_0xe002c10[];
+extern Vtx VB_vcutm_1_0xe002d00[];
+extern Vtx VB_vcutm_1_0xe002df0[];
+extern Vtx VB_vcutm_1_0xe002ee0[];
+extern Vtx VB_vcutm_1_0xe002fd0[];
+extern Vtx VB_vcutm_1_0xe0030c0[];
+extern Vtx VB_vcutm_1_0xe0031b0[];
+extern Vtx VB_vcutm_1_0xe0032a0[];
+extern Vtx VB_vcutm_1_0xe003390[];
+extern Vtx VB_vcutm_1_0xe003480[];
+extern Vtx VB_vcutm_1_0xe003570[];
+extern Vtx VB_vcutm_1_0xe003660[];
+extern Vtx VB_vcutm_1_0xe003750[];
+extern Vtx VB_vcutm_1_0xe003840[];
+extern Vtx VB_vcutm_1_0xe003930[];
+extern Vtx VB_vcutm_1_0xe003a20[];
+extern Vtx VB_vcutm_1_0xe003b10[];
+extern Vtx VB_vcutm_1_0xe003c00[];
+extern Vtx VB_vcutm_1_0xe003cf0[];
+extern Vtx VB_vcutm_1_0xe003de0[];
+extern Vtx VB_vcutm_1_0xe003ed0[];
+extern Vtx VB_vcutm_1_0xe003fc0[];
+extern Vtx VB_vcutm_1_0xe0040b0[];
+extern Vtx VB_vcutm_1_0xe0041a0[];
+extern Vtx VB_vcutm_1_0xe004290[];
+extern Vtx VB_vcutm_1_0xe004380[];
+extern Vtx VB_vcutm_1_0xe004470[];
+extern Vtx VB_vcutm_1_0xe004560[];
+extern Vtx VB_vcutm_1_0xe004650[];
+extern Vtx VB_vcutm_1_0xe004740[];
+extern Vtx VB_vcutm_1_0xe004830[];
+extern u8 vcutm_1__texture_0E000010[];
+extern u8 vcutm_1__texture_0E000050[];
+extern u8 vcutm_1__texture_0E000850[];
+extern u8 vcutm_1__texture_0E001850[];
+extern Light_t Light_vcutm_1_0xe000000;
+extern Ambient_t Light_vcutm_1_0xe000008;
+extern Gfx DL_vcutm_1_0xe004920[];
+extern u8 vcutm_1__texture_0E001050[];
+extern Gfx DL_vcutm_1_0xe005590[];
+extern u8 vcutm_1__texture_0E002050[];
+extern Gfx DL_vcutm_1_0xe0057c0[];
+#endif
