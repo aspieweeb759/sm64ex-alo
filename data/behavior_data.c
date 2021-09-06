@@ -3009,7 +3009,7 @@ const BehaviorScript bhvAnimatedTexture[] = {
     END_LOOP(),
 };
 
-const BehaviorScript RM_Scroll_Texture[] = {
+/*const BehaviorScript RM_Scroll_Texture[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     BEGIN_LOOP(),
         CALL_NATIVE(uv_update_scroll),
@@ -3020,7 +3020,7 @@ const BehaviorScript editor_Scroll_Texture[] = {
     BEGIN_LOOP(),
         CALL_NATIVE(uv_update_scroll),
     END_LOOP(),
-};
+};*/
 
 const BehaviorScript bhvBooInCastle[] = {
     BEGIN(OBJ_LIST_DEFAULT),
