@@ -49,7 +49,7 @@ void bhv_green_switchboard_loop(void);
 void bhv_green_switchboard_init(void);
 #endif
 
-void uv_update_scroll(void);
+/*void uv_update_scroll(void);*/
 void bhv_cap_switch_loop(void);
 void bhv_tiny_star_particles_init(void);
 void bhv_grindel_thwomp_loop(void);

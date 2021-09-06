@@ -103,7 +103,7 @@ s16 D_8032F0CC[] = { 6047, 5664, 5292, 4934, 4587, 4254, 3933, 3624, 3329, 3046,
 #include "behaviors/breakable_wall.inc.c"
 #include "behaviors/kickable_board.inc.c"
 #include "behaviors/tower_door.inc.c"
-#include "behaviors/texscroll.inc.c"
+/*#include "behaviors/texscroll.inc.c"*/
 #include "behaviors/rotating_platform.inc.c"
 #include "behaviors/koopa_shell_underwater.inc.c"
 #include "behaviors/warp.inc.c"
