@@ -1821,7 +1821,10 @@ static s32 act_intro_cutscene(struct MarioState *m) {
 
 // jumbo star cutscene: Mario lands after grabbing the jumbo star
 static void jumbo_star_cutscene_falling(struct MarioState *m) {
-    if (m->actionState == 0) {
+    gHudDisplay.flags=0;
+	level_trigger_warp(m, WARP_OP_CREDITS_END);
+	return set_mario_action(m, ACT_FREEFALL, 0);
+	if (m->actionState == 0) {
         m->input |= INPUT_A_DOWN;
         m->flags |= (MARIO_WING_CAP | MARIO_CAP_ON_HEAD);
 
