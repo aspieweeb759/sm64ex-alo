@@ -548,6 +548,9 @@ extern const BehaviorScript bhvEndBirds2[];
 extern const BehaviorScript bhvIntroScene[];
 extern const BehaviorScript bhvUnusedFakeStar[];
 
+// Star Road Custom Behavior
+extern const BehaviorScript bhvCustomSMSRShyGuy[];
+
 
 #if INCLUDE_MOP
 extern const BehaviorScript bhvFlipBlock_MOP[];
