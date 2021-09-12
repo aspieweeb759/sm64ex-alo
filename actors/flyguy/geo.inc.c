@@ -16,14 +16,10 @@ const GeoLayout flyguy_geo[] = {
                GEO_OPEN_NODE(),
                   GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, flyguy_seg8_dl_08010968),
                GEO_CLOSE_NODE(),
-               GEO_ANIMATED_PART(LAYER_OPAQUE, 250, 0, 0, NULL),
-               GEO_OPEN_NODE(),
-                  GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, flyguy_seg8_dl_08010B80),
-                  GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
-               GEO_CLOSE_NODE(),
             GEO_CLOSE_NODE(),
          GEO_CLOSE_NODE(),
       GEO_CLOSE_NODE(),
    GEO_CLOSE_NODE(),
    GEO_END(),
 };
+
