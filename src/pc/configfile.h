@@ -7,7 +7,7 @@
 #define bool int
 #endif
 
-#define CONFIGFILE_DEFAULT "sm64config.txt"
+#define CONFIGFILE_DEFAULT "sapphireconfig.txt"
 
 #define MAX_BINDS  3
 #define MAX_VOLUME 127
