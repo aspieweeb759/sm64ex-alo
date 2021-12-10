@@ -1,1 +1,1 @@
-// Replace with RM2C Output after exporting a level
+DEFINE_LEVEL(hmc,LEVEL_HMC)
