@@ -548,7 +548,9 @@ extern const BehaviorScript bhvEndBirds2[];
 extern const BehaviorScript bhvIntroScene[];
 extern const BehaviorScript bhvUnusedFakeStar[];
 
-
+// EVENT HORIZONS CUSTOM BEHAVIOR
+extern const BehaviorScript bhvNoExitStar[];
+extern const BehaviorScript bhvHiddenRedCoinStarNoExit[];
 #if INCLUDE_MOP
 extern const BehaviorScript bhvFlipBlock_MOP[];
 extern const BehaviorScript bhvNoteblock_MOP[];

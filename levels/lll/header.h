@@ -1,10 +1,39 @@
 #ifndef LLL_HEADER_H
 #define LLL_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_lll_1_0x14d0df0[];
+extern Gfx DL_lll_1_0xe00d930[];
+extern Gfx DL_lll_1_0xe010130[];
+extern const Collision col_lll_1_0xe010410[];
+extern struct MovtexQuadCollection lll_1_Movtex_0[];
+extern struct MovtexQuadCollection lll_1_Movtex_1[];
+extern struct MovtexQuadCollection lll_1_Movtex_2[];
+extern const GeoLayout Geo_lll_2_0x14d0fd0[];
+extern Gfx DL_lll_2_0xe019530[];
+extern Gfx DL_lll_2_0xe01dc60[];
+extern const Collision col_lll_2_0xe01de20[];
+extern struct MovtexQuadCollection lll_2_Movtex_0[];
+extern struct MovtexQuadCollection lll_2_Movtex_1[];
+extern struct MovtexQuadCollection lll_2_Movtex_2[];
+extern const GeoLayout Geo_lll_3_0x14d11b0[];
+extern Gfx DL_lll_3_0xe0171f0[];
+extern Gfx DL_lll_3_0xe01bd68[];
+extern const Collision col_lll_3_0xe01bff0[];
+extern struct MovtexQuadCollection lll_3_Movtex_0[];
+extern struct MovtexQuadCollection lll_3_Movtex_1[];
+extern struct MovtexQuadCollection lll_3_Movtex_2[];
+extern const LevelScript level_lll_custom_entry[];
+extern const LevelScript local_area_lll_1_[];
+extern const LevelScript local_objects_lll_1_[];
+extern const LevelScript local_warps_lll_1_[];
+extern const LevelScript local_area_lll_2_[];
+extern const LevelScript local_objects_lll_2_[];
+extern const LevelScript local_warps_lll_2_[];
+extern const LevelScript local_area_lll_3_[];
+extern const LevelScript local_objects_lll_3_[];
+extern const LevelScript local_warps_lll_3_[];
+extern const LevelScript level_lll_entry[];
 extern const GeoLayout lll_geo_0009E0[];
 extern const GeoLayout lll_geo_0009F8[];
 extern const GeoLayout lll_geo_000A10[];
@@ -47,8 +76,6 @@ extern const GeoLayout lll_geo_000DE8[];
 extern const GeoLayout lll_geo_000E00[];
 extern const GeoLayout lll_geo_000EA8[];
 extern const GeoLayout lll_geo_000EC0[];
-
-// leveldata
 extern const Gfx lll_seg7_dl_070134E0[];
 extern const Gfx lll_seg7_dl_070137C0[];
 extern const Gfx lll_seg7_dl_070138F8[];
@@ -124,8 +151,5 @@ extern const Gfx lll_dl_lava_floor[];
 extern const struct MovtexQuadCollection lll_movtex_volcano_floor_lava[];
 extern Movtex lll_movtex_tris_lavafall_volcano[];
 extern const Gfx lll_dl_lavafall_volcano[];
-
-// script
 extern const LevelScript level_lll_entry[];
-
 #endif

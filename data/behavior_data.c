@@ -6232,6 +6232,30 @@ const BehaviorScript bhvIntroScene[] = {
     END_LOOP(),
 };
 
+// EVENT HORIZONS CUSTOM BEHAVIOR
+
+const BehaviorScript bhvNoExitStar[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    OR_INT(oInteractionSubtype, INT_SUBTYPE_NO_EXIT),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_collect_star_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_collect_star_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvHiddenRedCoinStarNoExit[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, (OBJ_FLAG_PERSISTENT_RESPAWN | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    OR_INT(oInteractionSubtype, INT_SUBTYPE_NO_EXIT),
+    CALL_NATIVE(bhv_hidden_red_coin_star_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_hidden_red_coin_star_loop),
+    END_LOOP(),
+};
+
+
 #if INCLUDE_MOP
 //bhvUnused05A8 is basically a stub.
 //SPAWN_CHILD(ID,bhvUnused05A8) to spawn model parts
@@ -6419,4 +6443,5 @@ CALL_NATIVE(bhv_green_switchboard_loop),
 CALL_NATIVE(load_object_collision_model),
 END_LOOP(),
 };
+
 #endif
