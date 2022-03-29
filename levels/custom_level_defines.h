@@ -1,1 +1,4 @@
-// Replace with RM2C Output after exporting a level
+DEFINE_LEVEL(castle_inside,LEVEL_CASTLE)
+DEFINE_LEVEL(bob,LEVEL_BOB)
+DEFINE_LEVEL(bits,LEVEL_BITS)
+DEFINE_LEVEL(wf,LEVEL_WF)
