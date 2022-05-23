@@ -71,4 +71,4 @@
 //whether coins are 3d or not. Changes bhv scripts and pause menu reds rendering
 #define USE3DCOINS 0
 //must be manually set
-#define INCLUDE_MOP 0
+#define INCLUDE_MOP 1
