@@ -14,6 +14,15 @@
 
 #include "make_const_nonconst.h"
 #include "levels/castle_courtyard/header.h"
+#include "level_misc_macros.h"
+#include "macro_preset_names.h"
+static const MacroObject local_macro_objects_castle_courtyard_1[] = {
+MACRO_OBJECT_WITH_BEH_PARAM(macro_wooden_signpost,80,3180,20,330,158),
+MACRO_OBJECT_WITH_BEH_PARAM(macro_wooden_signpost,48,62356,20,330,159),
+MACRO_OBJECT_WITH_BEH_PARAM(macro_wooden_signpost,0,300,0,61936,102),
+MACRO_OBJECT_WITH_BEH_PARAM(macro_wooden_signpost,0,65236,0,61936,160),
+MACRO_OBJECT_END(),
+};
 
 static const LevelScript script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/     0, 200, -1652, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvAmbientSounds),
@@ -47,18 +56,22 @@ const LevelScript level_castle_courtyard_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_03,     castle_courtyard_geo_000200),
 
     AREA(/*index*/ 1, castle_courtyard_geo_000218),
-        OBJECT(/*model*/ MODEL_BOO,  /*pos*/ -2360, -100, -2712, /*angle*/ 0,   0, 0, /*behParam*/ 0x01050000, /*beh*/ bhvBooWithCage),
-        OBJECT(/*model*/ MODEL_NONE, /*pos*/     0,   51, -1000, /*angle*/ 0, 180, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvLaunchStarCollectWarp),
-        OBJECT(/*model*/ MODEL_NONE, /*pos*/     0,   51, -1000, /*angle*/ 0, 180, 0, /*behParam*/ 0x000B0000, /*beh*/ bhvLaunchDeathWarp),
-        WARP_NODE(/*id*/ 0x05, /*destLevel*/ LEVEL_BBH, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ 0x0A, /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ 0x0B, /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 0x01, /*destNode*/ 0x0B, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ 0x01, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 0x01, /*destNode*/ 0x02, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ 0xF1, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 0x01, /*destNode*/ 0x03, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
+MACRO_OBJECTS(local_macro_objects_castle_courtyard_1),
+WARP_NODE(241,16,1,3,0),
+WARP_NODE(1,6,1,2,0),
+WARP_NODE(11,26,1,11,0),
+WARP_NODE(10,26,1,10,0),
+WARP_NODE(5,4,1,10,0),
+OBJECT_WITH_ACTS(84,-71,1,-1387,0,0,0,0x0, bhvCourtyardBooTriplet,31),
+OBJECT_WITH_ACTS(84,3317,100,-1701,0,0,0,0x0, bhvCourtyardBooTriplet,31),
+OBJECT_WITH_ACTS(84,-3217,100,-101,0,0,0,0x0, bhvCourtyardBooTriplet,31),
+OBJECT_WITH_ACTS(0,2700,0,-1652,0,0,0,0x10000, bhvBirdsSoundLoop,31),
+OBJECT_WITH_ACTS(0,-2700,0,-1652,0,0,0,0x0, bhvBirdsSoundLoop,31),
+OBJECT_WITH_ACTS(0,0,200,-1652,0,0,0,0x0, bhvAmbientSounds,31),
+OBJECT_WITH_ACTS(0,0,51,-1000,0,180,0,0xb0000, bhvLaunchDeathWarp,31),
+OBJECT_WITH_ACTS(0,0,51,-1000,0,180,0,0xa0000, bhvLaunchStarCollectWarp,31),
+OBJECT_WITH_ACTS(84,-2360,-100,-2712,0,0,0,0x1050000, bhvBooWithCage,31),
         TERRAIN(/*terrainData*/ castle_courtyard_seg7_collision),
-        MACRO_OBJECTS(/*objList*/ castle_courtyard_seg7_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_SOUND_PLAYER),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_STONE),
     END_AREA(),
