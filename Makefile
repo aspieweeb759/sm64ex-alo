@@ -688,6 +688,12 @@ ifeq ($(RM2C),1)
   CFLAGS += -DRM2C
 endif
 
+# Check for external data
+ifeq ($(EXTERNAL_DATA),1)
+  CC_CHECK += -DEXTERNAL_DATA
+  CFLAGS += -DEXTERNAL_DATA
+endif
+
 #game wide edits
 ifeq ($(BUFFED_ENEMIES),1)
   CC_CHECK += -DBUFFED_ENEMIES
@@ -1352,6 +1358,10 @@ $(BUILD_DIR)/text/%/define_text.inc.c: text/define_text.inc.c text/%/courses.h t
 RSP_DIRS := $(BUILD_DIR)/rsp
 ALL_DIRS := $(BUILD_DIR) $(addprefix $(BUILD_DIR)/,$(SRC_DIRS) $(ASM_DIRS) $(GODDARD_SRC_DIRS) $(ULTRA_SRC_DIRS) $(ULTRA_ASM_DIRS) $(ULTRA_BIN_DIRS) $(BIN_DIRS) $(TEXTURE_DIRS) $(TEXT_DIRS) $(SOUND_SAMPLE_DIRS) $(addprefix levels/,$(LEVEL_DIRS)) include) $(MIO0_DIR) $(addprefix $(MIO0_DIR)/,$(VERSION)) $(SOUND_BIN_DIR) $(SOUND_BIN_DIR)/sequences/$(VERSION) $(RSP_DIRS)
 
+ifeq ($(EXTERNAL_DATA),1)
+  ALL_DIRS += $(SKYTILE_DIR)
+endif
+
 # Make sure build directory exists before compiling anything
 DUMMY != mkdir -p $(ALL_DIRS)
 
@@ -1390,21 +1400,20 @@ endif
 TEXTURE_ENCODING := u8
 
 ifeq ($(EXTERNAL_DATA),1)
-
 $(BUILD_DIR)/%: %.png
-	$(ZEROTERM) "$(patsubst %.png,%,$^)" > $@
-
+	$(call print,Converting:,$<,$@)
+	$(V)$(ZEROTERM) "$(patsubst %.png,%,$^)" > $@
+$(BUILD_DIR)/%.inc.c: $(BUILD_DIR)/% %.png
+	$(call print,Converting:,$<,$@)
+	$(V)hexdump -v -e '1/1 "0x%X,"' $< > $@
 else
-
 $(BUILD_DIR)/%: %.png
 	$(call print,Converting:,$<,$@)
 	$(V)$(N64GRAPHICS) -s raw -i $@ -g $< -f $(lastword $(subst ., ,$@))
-
-endif
-
 $(BUILD_DIR)/%.inc.c: %.png
 	$(call print,Converting:,$<,$@)
 	$(V)$(N64GRAPHICS) -s $(TEXTURE_ENCODING) -i $@ -g $< -f $(lastword ,$(subst ., ,$(basename $<)))
+endif
 
 ifeq ($(EXTERNAL_DATA),0)
 
@@ -1511,7 +1520,7 @@ $(SOUND_BIN_DIR)/%.inc.c: $(SOUND_BIN_DIR)/%
 else
 
 $(SOUND_BIN_DIR)/%.inc.c: $(SOUND_BIN_DIR)/%
-	$(call print,Piping:,$<,$@)
+	$(call print,Converting to C:,$<,$@)
 	$(V)hexdump -v -e '1/1 "0x%X,"' $< > $@
 	$(V)echo >> $@
 
