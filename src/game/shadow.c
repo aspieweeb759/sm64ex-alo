@@ -71,6 +71,10 @@ struct Shadow {
  * Constant to indicate any sort of rectangular shadow.
  */
 #define SHADOW_SHAPE_SQUARE 20
+/**
+  * Constant to indicate a shadow consists of 9 vertices.
+  */
+#define SHADOW_SHAPE_SPIKE 30
 
 /**
  * Constant to indicate a shadow consists of 9 vertices.
@@ -470,6 +474,9 @@ void add_shadow_to_display_list(Gfx *displayListHead, Vtx *verts, s8 shadowVerte
             break;
         case SHADOW_SHAPE_SQUARE:
             gSPDisplayList(displayListHead++, dl_shadow_square) break;
+		case SHADOW_SHAPE_SPIKE:
+            gSPDisplayList(displayListHead++, dl_shadow_spike);
+            break;
     }
     switch (shadowVertexType) {
         case SHADOW_WITH_9_VERTS:
@@ -694,6 +701,34 @@ Gfx *create_shadow_circle_4_verts(f32 xPos, f32 yPos, f32 zPos, s16 shadowScale,
 }
 
 /**
+ * Create a spike shadow composed of 4 vertices.
+ */
+Gfx *create_shadow_spike(f32 xPos, f32 yPos, f32 zPos, s16 shadowScale, u8 solidity) {
+    Vtx *verts;
+    Gfx *displayList;
+    struct Shadow shadow;
+    s32 i;
+
+    if (init_shadow(&shadow, xPos, yPos, zPos, shadowScale, solidity) != 0) {
+        return NULL;
+    }
+
+    verts = alloc_display_list(4 * sizeof(Vtx));
+    displayList = alloc_display_list(5 * sizeof(Gfx));
+
+    if (verts == NULL || displayList == NULL) {
+        return 0;
+    }
+
+    for (i = 0; i < 4; i++) {
+        make_shadow_vertex(verts, i, shadow, SHADOW_WITH_4_VERTS);
+    }
+    add_shadow_to_display_list(displayList, verts, SHADOW_WITH_4_VERTS, SHADOW_SHAPE_SPIKE);
+    return displayList;
+}
+
+
+/**
  * Create a circular shadow composed of 4 vertices and assume that the ground
  * underneath it is totally flat.
  */
@@ -871,9 +906,8 @@ Gfx *create_shadow_below_xyz(f32 xPos, f32 yPos, f32 zPos, s16 shadowScale, u8 s
         case SHADOW_CIRCLE_4_VERTS:
             displayList = create_shadow_circle_4_verts(xPos, yPos, zPos, shadowScale, shadowSolidity);
             break;
-        case SHADOW_CIRCLE_4_VERTS_FLAT_UNUSED: // unused shadow type
-            displayList = create_shadow_circle_assuming_flat_ground(xPos, yPos, zPos, shadowScale,
-                                                                    shadowSolidity);
+        case SHADOW_SPIKE:
+            displayList = create_shadow_spike(xPos, yPos, zPos, shadowScale, shadowSolidity);
             break;
         case SHADOW_SQUARE_PERMANENT:
             displayList =
