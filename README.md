@@ -42,18 +42,6 @@ RM2C tool developed by jesusyoshi54: [RM2C](https://gitlab.com/scuttlebugraiser/
 	
     TEXTURE PACK SUPPORT (You will need to run this command twice due to a weird compiler error)
 	* make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1 EXTERNAL_DATA=1
-	
- 2. N64 BUILD
-	* make -j4 RM2C=1
-	
- 3. 3DS BUILD
-        * make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_N3DS=1 DEBUG=1 NODRAWINGDISTANCE=0 RM2C=1
-        
- 4. WIIU BUILD
-        * make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_WII_U=1 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
-        
- 5. SWITCH BUILD
-        * make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_SWITCH=1 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
         
 
  * To build for sm64ex platforms, [click here](https://github.com/sm64pc/sm64ex/blob/nightly/README.md).
