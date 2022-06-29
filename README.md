@@ -18,9 +18,7 @@ Each branch of this repository should be a hack that has finished being ported o
 
 ### Porting Tools
 
-RM2C is the tool I developed to be able to port romhacks: [RM2C](https://gitlab.com/scuttlebugraiser/rom-manger-2-c)
-
-When using the data from RM2C, make sure to set RM2C to 1 in the makefile.
+RM2C tool developed by jesusyoshi54: [RM2C](https://gitlab.com/scuttlebugraiser/rom-manger-2-c)
 
 ### Changes to Master Branch
 
@@ -32,16 +30,25 @@ When using the data from RM2C, make sure to set RM2C to 1 in the makefile.
  * Skip Intro
  * Separated Custom Leveldata From Vanilla Leveldata
  * Various defines added to accept RM2C output configurations in single config file
+ * Fixed External Data Support
+ * Add AloXado's Tree Shadows patch
 
 ## Building
 
 ### Recommended BUILD cmds
 
  1. WINDOWS_BUILD
-	* make clean && make RM2CPC
+	* make clean && make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
+    TEXTURE PACK SUPPORT (You will need to run this command twice due to a weird compiler error)
+	* make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1 EXTERNAL_DATA=1
  2. N64 BUILD
 	* make -j4 RM2C=1
-
+ 3. 3DS BUILD
+        * make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_N3DS=1 DEBUG=1 NODRAWINGDISTANCE=0 RM2C=1
+ 4. WIIU BUILD
+        * make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_WII_U=1 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
+ 5. SWITCH BUILD
+        * make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_SWITCH=1 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
 
  * To build for sm64ex platforms, [click here](https://github.com/sm64pc/sm64ex/blob/nightly/README.md).
  * To build for N64, [click here](https://github.com/n64decomp/sm64/blob/master/README.md). (TARGET_N64=1)
