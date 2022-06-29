@@ -18,7 +18,7 @@ const GeoLayout ssl_geo_000648[] = {
                GEO_DISPLAY_LIST(LAYER_OPAQUE, ssl_seg7_dl_07009F48),
                GEO_DISPLAY_LIST(LAYER_OPAQUE, ssl_seg7_dl_0700BA78),
                GEO_DISPLAY_LIST(LAYER_ALPHA, ssl_seg7_dl_0700BC18),
-               GEO_DISPLAY_LIST(LAYER_TRANSPARENT_DECAL, ssl_seg7_dl_0700BD00),
+               // GEO_DISPLAY_LIST(LAYER_TRANSPARENT_DECAL, ssl_seg7_dl_0700BD00),
                GEO_ASM(0x0801, geo_movtex_update_horizontal),
                GEO_ASM(   0, geo_movtex_pause_control),
                GEO_ASM(0x0801, geo_movtex_draw_water_regions),
