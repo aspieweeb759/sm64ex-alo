@@ -16,6 +16,16 @@ This repo has been forked from sm64ex_alo to be optimized for porting romhacks f
 
 Each branch of this repository should be a hack that has finished being ported or is currently being ported.
 
+For most romhacks, the start level should be changed to 16 in "src/game/tweaks.inc.c"
+
+If your romhack has fog related graphics bugs, they can be fixed relatively easily
+All you need to do is paste the line of code below in between "gsSPGeometryMode(0, G_CULL_BACK|G_LIGHTING)," and "gsSPEndDisplayList(),"
+at the bottom of custom.model.inc.c in "name_of_level/areas/1/"
+
+gsDPPipeSync(),
+gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, SHADE,TEXEL0, 0, SHADE, 0, 0, 0, 0, SHADE),
+gsDPSetRenderMode(G_RM_AA_ZB_TEX_EDGE, G_RM_NOOP2),
+
 ### Porting Tools
 
 RM2C tool developed by jesusyoshi54: [RM2C](https://gitlab.com/scuttlebugraiser/rom-manger-2-c)
@@ -38,7 +48,7 @@ RM2C tool developed by jesusyoshi54: [RM2C](https://gitlab.com/scuttlebugraiser/
 ### Recommended BUILD cmds
 
  1. WINDOWS_BUILD
-	* make clean && make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
+	* make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1
 	
     TEXTURE PACK SUPPORT (You will need to run this command twice due to a weird compiler error)
 	* make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1 RM2C=1 EXTERNAL_DATA=1
