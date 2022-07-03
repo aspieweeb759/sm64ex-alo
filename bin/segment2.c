@@ -2466,10 +2466,6 @@ ALIGNED8 static const Texture texture_shadow_quarter_circle[] = {
 #include "textures/segment2/shadow_quarter_circle.ia8.inc.c"
 };
 
-ALIGNED8 static const Texture texture_shadow_spike[] = {
-#include "textures/segment2/shadow_quarter_spike.ia8.inc.c"
-};
-
 ALIGNED8 static const Texture texture_shadow_quarter_square[] = {
 #include "textures/segment2/shadow_quarter_square.ia8.inc.c"
  };
@@ -2585,12 +2581,6 @@ const Gfx dl_shadow_circle[] = {
 const Gfx dl_shadow_square[] = {
     gsSPDisplayList(dl_shadow_begin),
     gsDPLoadTextureBlock(texture_shadow_quarter_square, G_IM_FMT_IA, G_IM_SIZ_8b, 16, 16, 0, G_TX_WRAP | G_TX_MIRROR, G_TX_WRAP | G_TX_MIRROR, 4, 4, G_TX_NOLOD, G_TX_NOLOD),
-    gsSPEndDisplayList(),
-};
-
-const Gfx dl_shadow_spike[] = {
-    gsSPDisplayList(dl_shadow_begin),
-    gsDPLoadTextureBlock(texture_shadow_spike, G_IM_FMT_IA, G_IM_SIZ_8b, 16, 16, 0, G_TX_WRAP | G_TX_MIRROR, G_TX_WRAP | G_TX_MIRROR, 4, 4, G_TX_NOLOD, G_TX_NOLOD),
     gsSPEndDisplayList(),
 };
 
