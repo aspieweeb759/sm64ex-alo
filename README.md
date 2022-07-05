@@ -42,6 +42,14 @@ bistring, capstone, pypng, PIL, and pyhull.
 * pip install pillow
 * pip install pyhull (may require microsoft visual studio C++ build tools alongside it)
 
+### Usage
+Type these commands in cmd
+
+* cd rom-manager-2-c
+* python RM2C.py rom='rom_name.z64' levels='all' actors='all' Textures=1 Title=1
+
+### If your hack was made in editor, add editor=1 to the command
+
 You must use my fork of sm64ex-alo for RM2C
 
 For most romhacks, the start level should be changed to 16 in "src/game/tweaks.inc.c"
