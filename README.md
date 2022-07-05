@@ -16,7 +16,37 @@ This repo has been forked from sm64ex_alo to be optimized for porting romhacks f
 
 Each branch of this repository should be a hack that has finished being ported or is currently being ported.
 
+### Install RM2C in "C:/Users/Your_Name" to use in windows Command Prompt
+### RM2C tool developed by jesusyoshi54: [RM2C](https://gitlab.com/scuttlebugraiser/rom-manger-2-c)
+
+### Changes to Master Branch
+
+ * CI texture support
+ * Skinned Mario Model (You will want to use the original mario model if you are building with external data enabled)
+ * Custom version of Puppycam
+ * Extended Bounds
+ * Various Bugfixes
+ * Skip Intro
+ * Separated Custom Leveldata From Vanilla Leveldata
+ * Various defines added to accept RM2C output configurations in single config file
+ * Fixed External Data Support
+
+### Dependencies
+bistring, capstone, pypng, PIL, and pyhull.
+
+### Installation
+
+* pip install bitstring
+* pip install capstone
+* pip install pypng
+* pip install pillow
+* pip install pyhull (may require microsoft visual studio C++ build tools alongside it)
+
+You must use my fork of sm64ex-alo for RM2C
+
 For most romhacks, the start level should be changed to 16 in "src/game/tweaks.inc.c"
+
+To enable Kaze's MOP models, set MOP to 1 in "src/game/tweaks.inc.c"
 
 If your romhack has fog related graphics bugs, they can be fixed relatively easily
 All you need to do is paste the line of code below in between "gsSPGeometryMode(0, G_CULL_BACK|G_LIGHTING)," and "gsSPEndDisplayList(),"
@@ -25,23 +55,6 @@ at the bottom of custom.model.inc.c in "name_of_level/areas/1/"
 gsDPPipeSync(),
 gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, SHADE,TEXEL0, 0, SHADE, 0, 0, 0, 0, SHADE),
 gsDPSetRenderMode(G_RM_AA_ZB_TEX_EDGE, G_RM_NOOP2),
-
-### Porting Tools
-
-RM2C tool developed by jesusyoshi54: [RM2C](https://gitlab.com/scuttlebugraiser/rom-manger-2-c)
-
-### Changes to Master Branch
-
- * CI texture support
- * Skinned Mario Model
- * Custom version of Puppycam
- * Extended Bounds
- * Various Bugfixes
- * Skip Intro
- * Separated Custom Leveldata From Vanilla Leveldata
- * Various defines added to accept RM2C output configurations in single config file
- * Fixed External Data Support
- * Add AloXado's Tree Shadows patch
 
 ## Building
 
