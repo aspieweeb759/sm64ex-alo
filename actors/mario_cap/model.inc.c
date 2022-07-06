@@ -1,4 +1,4 @@
-// Mario Cap (Normal Cap, Metal, Winged, etc)
+// Star Revenge 6.5 Luigi Cap (Normal Cap, Metal, Winged, etc)
 
 // 0x0301CF08
 static const Lights1 mario_cap_seg3_lights_0301CF08 = gdSPDefLights1(
@@ -14,8 +14,8 @@ static const Lights1 mario_cap_seg3_lights_0301CF20 = gdSPDefLights1(
 
 // 0x0301CF38
 static const Lights1 mario_cap_seg3_lights_0301CF38 = gdSPDefLights1(
-    0x7f, 0x00, 0x00,
-    0xff, 0x00, 0x00, 0x28, 0x28, 0x28
+    0x00, 0x7f, 0x00,
+    0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0301CF50
