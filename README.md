@@ -22,7 +22,6 @@ Each branch of this repository should be a hack that has finished being ported o
 ### Changes to Master Branch
 
  * CI texture support
- * Skinned Mario Model (You will want to use the original mario model if you are building with external data enabled)
  * Custom version of Puppycam
  * Extended Bounds
  * Various Bugfixes
