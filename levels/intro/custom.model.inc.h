@@ -1,0 +1,56 @@
+#ifndef TITLESCREEN_HEADER_H
+#define TITLESCREEN_HEADER_H
+#include "types.h"
+extern Vtx VB_intro_seg7_0x7000000[];
+extern Vtx VB_intro_seg7_0x70000f0[];
+extern Vtx VB_intro_seg7_0x70001e0[];
+extern Vtx VB_intro_seg7_0x70002d0[];
+extern Vtx VB_intro_seg7_0x70003c0[];
+extern Vtx VB_intro_seg7_0x70004b0[];
+extern Vtx VB_intro_seg7_0x70005a0[];
+extern Vtx VB_intro_seg7_0x7000690[];
+extern Vtx VB_intro_seg7_0x7000780[];
+extern Vtx VB_intro_seg7_0x7000870[];
+extern Vtx VB_intro_seg7_0x7000960[];
+extern Vtx VB_intro_seg7_0x7000a50[];
+extern Vtx VB_intro_seg7_0x7000b40[];
+extern Vtx VB_intro_seg7_0x7000c30[];
+extern Vtx VB_intro_seg7_0x7000d20[];
+extern Vtx VB_intro_seg7_0x7000e10[];
+extern Vtx VB_intro_seg7_0x7000f00[];
+extern Vtx VB_intro_seg7_0x7000ff0[];
+extern Vtx VB_intro_seg7_0x70010e0[];
+extern Vtx VB_intro_seg7_0x70011d0[];
+extern Vtx VB_intro_seg7_0x70012c0[];
+extern Vtx VB_intro_seg7_0x70013b0[];
+extern Vtx VB_intro_seg7_0x70014a0[];
+extern Vtx VB_intro_seg7_0x7001590[];
+extern Vtx VB_intro_seg7_0x7001680[];
+extern Vtx VB_intro_seg7_0x7001770[];
+extern Vtx VB_intro_seg7_0x7001860[];
+extern Vtx VB_intro_seg7_0x7001950[];
+extern Vtx VB_intro_seg7_0x7001a40[];
+extern Vtx VB_intro_seg7_0x7001b30[];
+extern Vtx VB_intro_seg7_0x7001c20[];
+extern Vtx VB_intro_seg7_0x7001d10[];
+extern Vtx VB_intro_seg7_0x7001e00[];
+extern Vtx VB_intro_seg7_0x7001ef0[];
+extern Vtx VB_intro_seg7_0x7001fe0[];
+extern Vtx VB_intro_seg7_0x70020d0[];
+extern Vtx VB_intro_seg7_0x70021c0[];
+extern Vtx VB_intro_seg7_0x70022b0[];
+extern Vtx VB_intro_seg7_0x70023a0[];
+extern Vtx VB_intro_seg7_0x7002490[];
+extern Vtx VB_intro_seg7_0x7002580[];
+extern Vtx VB_intro_seg7_0x7002670[];
+extern Vtx VB_intro_seg7_0x7002760[];
+extern Vtx VB_intro_seg7_0x7002850[];
+extern Vtx VB_intro_seg7_0x7002940[];
+extern Vtx VB_intro_seg7_0x7002a30[];
+extern Vtx VB_intro_seg7_0x7002b20[];
+extern Vtx VB_intro_seg7_0x7002c10[];
+extern u8 intro_seg7__texture_070036C0[];
+extern Light_t Light_intro_seg7_0x70036b0;
+extern Gfx DL_intro_seg7_0x700b3a0[];
+extern Gfx DL_intro_seg7_0x7002d00[];
+#endif

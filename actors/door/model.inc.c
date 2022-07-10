@@ -64,17 +64,17 @@ ALIGNED8 static const Texture door_seg3_texture_03011510[] = {
 
 // 0x03011D10
 ALIGNED8 static const Texture door_seg3_texture_03011D10[] = {
-#include "actors/door/zero_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_0_star_geo_0x3011d10_custom.rgba16.inc.c"
 };
 
 // 0x03012510
 ALIGNED8 static const Texture door_seg3_texture_03012510[] = {
-#include "actors/door/one_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_1_star_geo_0x3012510_custom.rgba16.inc.c"
 };
 
 // 0x03012D10
 ALIGNED8 static const Texture door_seg3_texture_03012D10[] = {
-#include "actors/door/three_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_3_stars_geo_0x3012d10_custom.rgba16.inc.c"
 };
 
 // 0x03013510

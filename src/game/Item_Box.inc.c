@@ -1,0 +1,35 @@
+#include <PR/ultratypes.h>
+#include "behavior_actions.h"
+#include "macros.h"
+#include "types.h"
+#include "behavior_data.h"
+struct Struct802C0DF0 sExclamationBoxContents[] = { { 0, 0, 0, 135,  bhvWingCap },
+{ 1, 0, 0, 134,  bhvMetalCap },
+{ 2, 0, 0, 136,  bhvVanishCap },
+{ 3, 0, 0, 190,  bhvKoopaShell },
+{ 4, 0, 0, 116,  bhvSingleCoinGetsSpawned },
+{ 5, 0, 0, 0,  bhvThreeCoinsSpawn },
+{ 6, 0, 0, 0,  bhvTenCoinsSpawn },
+{ 7, 0, 0, 212,  bhv1upWalking },
+{ 8, 0, 0, 122,  bhvSpawnedStar },
+{ 9, 0, 0, 212,  bhv1upRunningAway },
+{ 10, 0, 1, 122,  bhvSpawnedStar },
+{ 11, 0, 2, 122,  bhvSpawnedStar },
+{ 12, 0, 3, 122,  bhvSpawnedStar },
+{ 13, 0, 4, 122,  bhvSpawnedStar },
+{ 14, 0, 5, 122,  bhvSpawnedStar },
+{ 15, 0, 0, 0,  bhvGoomba },
+{ 16, 0, 3, 220,  bhvFlyGuy },
+{ 17, 0, 3, 194,  bhvCirclingAmp },
+{ 18, 0, 3, 223,  bhvChuckya },
+{ 19, 0, 3, 188,  bhvBobomb },
+{ 20, 0, 3, 215,  bhvRedCoin },
+{ 21, 0, 3, 118,  bhvMovingBlueCoin },
+{ 22, 0, 3, 100,  bhvPiranhaPlant },
+{ 23, 0, 3, 104,  bhvKoopa },
+{ 24, 0, 3, 103,  bhvWhompKingBoss },
+{ 25, 0, 3, 86,  bhvKingBobomb },
+{ 26, 0, 3, 180,  bhvFireSpitter },
+{ 27, 0, 3, 84,  bhvGhostHuntBoo },
+{ 28, 0, 3, 87,  bhvMadPiano },
+{ 99, 0, 0, 0, NULL } };

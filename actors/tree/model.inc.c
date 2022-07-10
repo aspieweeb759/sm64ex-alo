@@ -71,7 +71,7 @@ const Gfx tree_seg3_dl_0302FEE8[] = {
 
 // 0x0302FF60
 ALIGNED8 static const Texture tree_seg3_texture_0302FF60[] = {
-#include "actors/tree/pine_tree.rgba16.inc.c"
+#include "actors/tree/spiky_tree_geo_0x302ff60_custom.rgba16.inc.c"
 };
 
 // 0x03030F60
@@ -108,7 +108,7 @@ const Gfx tree_seg3_dl_03030FA0[] = {
 
 // 0x03031048
 ALIGNED8 static const Texture tree_seg3_texture_03031048[] = {
-#include "actors/tree/snowy_pine_tree.rgba16.inc.c"
+#include "actors/tree/snow_tree_geo_0x3031048_custom.rgba16.inc.c"
 };
 
 // 0x03032048
@@ -177,7 +177,7 @@ const Gfx tree_seg3_dl_03032170[] = {
 
 // 0x03032218
 ALIGNED8 static const Texture tree_seg3_texture_03032218[] = {
-#include "actors/tree/palm_tree.rgba16.inc.c"
+#include "actors/tree/palm_tree_geo_0x3032218_custom.rgba16.inc.c"
 };
 
 // 0x03033218

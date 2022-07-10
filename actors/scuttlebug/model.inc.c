@@ -19,12 +19,12 @@ ALIGNED8 static const Texture scuttlebug_seg6_texture_06010108[] = {
 
 // 0x06010908
 ALIGNED8 static const Texture scuttlebug_seg6_texture_06010908[] = {
-#include "actors/scuttlebug/scuttlebug_left_side.rgba16.inc.c"
+#include "actors/scuttlebug/scuttlebug_geo_0x6010908_custom.rgba16.inc.c"
 };
 
 // 0x06011908
 ALIGNED8 static const Texture scuttlebug_seg6_texture_06011908[] = {
-#include "actors/scuttlebug/scuttlebug_right_side.rgba16.inc.c"
+#include "actors/scuttlebug/scuttlebug_geo_0x6011908_custom.rgba16.inc.c"
 };
 
 // 0x06012908
