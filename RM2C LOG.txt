@@ -1,0 +1,122 @@
+Text Finished
+Misc Finished
+Starting Export
+finished area 1 in level castle_inside
+finished area 2 in level castle_inside
+finished area 3 in level castle_inside
+finished area 4 in level castle_inside
+finished area 5 in level castle_inside
+finished area 6 in level castle_inside
+castle_inside done
+Model file levels\bbh\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level bbh
+finished area 2 in level bbh
+finished area 3 in level bbh
+bbh done
+finished area 1 in level ccm
+finished area 2 in level ccm
+finished area 3 in level ccm
+finished area 4 in level ccm
+ccm done
+finished area 1 in level hmc
+finished area 2 in level hmc
+finished area 3 in level hmc
+hmc done
+finished area 1 in level ssl
+finished area 2 in level ssl
+finished area 3 in level ssl
+finished area 4 in level ssl
+ssl done
+0x1010101 0x1 []
+finished area 1 in level bob
+finished area 2 in level bob
+bob done
+finished area 1 in level sl
+finished area 2 in level sl
+sl done
+finished area 1 in level wdw
+finished area 2 in level wdw
+wdw done
+finished area 1 in level jrb
+finished area 2 in level jrb
+jrb done
+Model file levels\thi\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level thi
+Model file levels\thi\areas\2\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 2 in level thi
+Model file levels\thi\areas\3\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 3 in level thi
+thi done
+Model file levels\ttc\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level ttc
+finished area 2 in level ttc
+finished area 3 in level ttc
+finished area 4 in level ttc
+finished area 5 in level ttc
+finished area 6 in level ttc
+ttc done
+Model file levels\rr\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level rr
+Model file levels\rr\areas\2\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 2 in level rr
+Model file levels\rr\areas\3\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 3 in level rr
+Model file levels\rr\areas\4\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 4 in level rr
+rr done
+0x1010101 0x1 []
+Model file levels\castle_grounds\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level castle_grounds
+castle_grounds done
+Model file levels\bitdw\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level bitdw
+bitdw done
+vcutm done
+Model file levels\bitfs\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level bitfs
+Model file levels\bitfs\areas\2\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 2 in level bitfs
+Model file levels\bitfs\areas\3\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 3 in level bitfs
+Model file levels\bitfs\areas\4\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 4 in level bitfs
+Model file levels\bitfs\areas\5\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 5 in level bitfs
+Model file levels\bitfs\areas\6\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 6 in level bitfs
+bitfs done
+Model file levels\sa\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level sa
+sa done
+finished area 1 in level bits
+bits done
+Model file levels\lll\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level lll
+finished area 2 in level lll
+lll done
+finished area 1 in level ddd
+finished area 2 in level ddd
+ddd done
+finished area 1 in level wf
+finished area 2 in level wf
+finished area 3 in level wf
+wf done
+ending done
+finished area 1 in level castle_courtyard
+castle_courtyard done
+finished area 1 in level pss
+pss done
+cotmc done
+totwc done
+finished area 1 in level bowser_1
+Texture Scroll Object in level bowser_1 area 1 at 0xe020ad0 has unrecognized address. Object Has been commented out.
+bowser_1 done
+Model file levels\wmotr\areas\1\custom.model.inc.c has fog, for editor, fog DLs are heavily edited, potential for gfx errors.
+finished area 1 in level wmotr
+wmotr done
+bowser_2 done
+bowser_3 done
+finished area 1 in level ttm
+finished area 2 in level ttm
+finished area 3 in level ttm
+ttm done
