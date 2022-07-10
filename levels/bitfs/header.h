@@ -1,9 +1,54 @@
 #ifndef BITFS_HEADER_H
 #define BITFS_HEADER_H
-
 #include "types.h"
-
-// geo
+#include "game/moving_texture.h"
+extern const GeoLayout Geo_bitfs_1_0x26a0000[];
+extern Gfx DL_bitfs_1_0xe01ec40[];
+extern Gfx DL_bitfs_1_0xe021820[];
+extern Gfx DL_bitfs_1_0xe0219e0[];
+extern const Collision col_bitfs_1_0xe0224a0[];
+extern const GeoLayout Geo_bitfs_2_0x26a00b0[];
+extern Gfx DL_bitfs_2_0xe047300[];
+extern Gfx DL_bitfs_2_0xe04af30[];
+extern const Collision col_bitfs_2_0xe04bf80[];
+extern const GeoLayout Geo_bitfs_3_0x26a0160[];
+extern Gfx DL_bitfs_3_0xe06be10[];
+extern Gfx DL_bitfs_3_0xe06ec10[];
+extern const Collision col_bitfs_3_0xe06fb20[];
+extern const GeoLayout Geo_bitfs_4_0x26a0210[];
+extern Gfx DL_bitfs_4_0xe09e8c0[];
+extern Gfx DL_bitfs_4_0xe0a6ee0[];
+extern Gfx DL_bitfs_4_0xe0a7830[];
+extern const Collision col_bitfs_4_0xe0a8040[];
+extern const GeoLayout Geo_bitfs_5_0x26a02c0[];
+extern Gfx DL_bitfs_5_0xe0d2fc0[];
+extern Gfx DL_bitfs_5_0xe0d9fb0[];
+extern Gfx DL_bitfs_5_0xe0da7a0[];
+extern const Collision col_bitfs_5_0xe0daea0[];
+extern const GeoLayout Geo_bitfs_6_0x26a0370[];
+extern Gfx DL_bitfs_6_0xe0f6d10[];
+extern Gfx DL_bitfs_6_0xe0f8c60[];
+extern const Collision col_bitfs_6_0xe0f9330[];
+extern const LevelScript level_bitfs_custom_entry[];
+extern const LevelScript local_area_bitfs_1_[];
+extern const LevelScript local_objects_bitfs_1_[];
+extern const LevelScript local_warps_bitfs_1_[];
+extern const LevelScript local_area_bitfs_2_[];
+extern const LevelScript local_objects_bitfs_2_[];
+extern const LevelScript local_warps_bitfs_2_[];
+extern const LevelScript local_area_bitfs_3_[];
+extern const LevelScript local_objects_bitfs_3_[];
+extern const LevelScript local_warps_bitfs_3_[];
+extern const LevelScript local_area_bitfs_4_[];
+extern const LevelScript local_objects_bitfs_4_[];
+extern const LevelScript local_warps_bitfs_4_[];
+extern const LevelScript local_area_bitfs_5_[];
+extern const LevelScript local_objects_bitfs_5_[];
+extern const LevelScript local_warps_bitfs_5_[];
+extern const LevelScript local_area_bitfs_6_[];
+extern const LevelScript local_objects_bitfs_6_[];
+extern const LevelScript local_warps_bitfs_6_[];
+extern const LevelScript level_bitfs_entry[];
 extern const GeoLayout bitfs_geo_0004B0[];
 extern const GeoLayout bitfs_geo_0004C8[];
 extern const GeoLayout bitfs_geo_0004E0[];
@@ -36,8 +81,6 @@ extern const GeoLayout bitfs_geo_000758[];
 extern const GeoLayout bitfs_geo_000770[];
 extern const GeoLayout bitfs_geo_000788[];
 extern const GeoLayout bitfs_geo_0007A0[];
-
-// leveldata
 extern const Gfx bitfs_seg7_dl_07002118[];
 extern const Gfx bitfs_seg7_dl_07002A78[];
 extern const Gfx bitfs_seg7_dl_07003670[];
@@ -90,8 +133,5 @@ extern Movtex bitfs_movtex_tris_lava_second_section[];
 extern Movtex bitfs_movtex_tris_lava_floor[];
 extern const Gfx bitfs_dl_lava_sections[];
 extern const Gfx bitfs_dl_lava_floor[];
-
-// script
 extern const LevelScript level_bitfs_entry[];
-
 #endif

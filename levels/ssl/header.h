@@ -1,10 +1,39 @@
 #ifndef SSL_HEADER_H
 #define SSL_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_ssl_1_0x1780000[];
+extern Gfx DL_ssl_1_0xe08d450[];
+extern Gfx DL_ssl_1_0xe0a6bb0[];
+extern Gfx DL_ssl_1_0xe0a7800[];
+extern const Collision col_ssl_1_0xe0a7d30[];
+extern const GeoLayout Geo_ssl_2_0x17800b0[];
+extern Gfx DL_ssl_2_0xe0d4d90[];
+extern Gfx DL_ssl_2_0xe0d7a60[];
+extern Gfx DL_ssl_2_0xe0d9000[];
+extern const Collision col_ssl_2_0xe0d9120[];
+extern const GeoLayout Geo_ssl_3_0x1780160[];
+extern Gfx DL_ssl_3_0xe0f4fd0[];
+extern Gfx DL_ssl_3_0xe0f7d80[];
+extern const Collision col_ssl_3_0xe0f8160[];
+extern const GeoLayout Geo_ssl_4_0x1780210[];
+extern Gfx DL_ssl_4_0xe110b10[];
+extern Gfx DL_ssl_4_0xe113ea0[];
+extern const Collision col_ssl_4_0xe114640[];
+extern const LevelScript level_ssl_custom_entry[];
+extern const LevelScript local_area_ssl_1_[];
+extern const LevelScript local_objects_ssl_1_[];
+extern const LevelScript local_warps_ssl_1_[];
+extern const LevelScript local_area_ssl_2_[];
+extern const LevelScript local_objects_ssl_2_[];
+extern const LevelScript local_warps_ssl_2_[];
+extern const LevelScript local_area_ssl_3_[];
+extern const LevelScript local_objects_ssl_3_[];
+extern const LevelScript local_warps_ssl_3_[];
+extern const LevelScript local_area_ssl_4_[];
+extern const LevelScript local_objects_ssl_4_[];
+extern const LevelScript local_warps_ssl_4_[];
+extern const LevelScript level_ssl_entry[];
 extern const GeoLayout ssl_geo_0005C0[];
 extern const GeoLayout ssl_geo_0005D8[];
 extern const GeoLayout ssl_geo_000618[];
@@ -16,8 +45,6 @@ extern const GeoLayout ssl_geo_000794[];
 extern const GeoLayout ssl_geo_0007AC[];
 extern const GeoLayout ssl_geo_0007CC[];
 extern const GeoLayout ssl_geo_00088C[];
-
-// leveldata
 extern const u8 ssl_pyramid_sand[];
 extern const u8 ssl_quicksand[];
 extern const Gfx ssl_dl_quicksand_pit_begin[];
@@ -81,8 +108,5 @@ extern const Gfx ssl_dl_pyramid_sand_pathway_front_end[];
 extern Movtex ssl_movtex_tris_pyramid_sand_pathway_floor[];
 extern Movtex ssl_movtex_tris_pyramid_sand_pathway_side[];
 extern const Gfx ssl_dl_pyramid_sand_pathway_side_end[];
-
-// script
 extern const LevelScript level_ssl_entry[];
-
 #endif

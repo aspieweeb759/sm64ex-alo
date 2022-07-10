@@ -1,10 +1,31 @@
 #ifndef WF_HEADER_H
 #define WF_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_wf_1_0x2d80000[];
+extern Gfx DL_wf_1_0xe064ae0[];
+extern Gfx DL_wf_1_0xe072530[];
+extern Gfx DL_wf_1_0xe072e70[];
+extern const Collision col_wf_1_0xe073660[];
+extern const GeoLayout Geo_wf_2_0x2d800b0[];
+extern Gfx DL_wf_2_0xe08fba0[];
+extern Gfx DL_wf_2_0xe091570[];
+extern const Collision col_wf_2_0xe0918f0[];
+extern const GeoLayout Geo_wf_3_0x2d80160[];
+extern Gfx DL_wf_3_0xe0bf9b0[];
+extern Gfx DL_wf_3_0xe0c32e0[];
+extern const Collision col_wf_3_0xe0c6600[];
+extern const LevelScript level_wf_custom_entry[];
+extern const LevelScript local_area_wf_1_[];
+extern const LevelScript local_objects_wf_1_[];
+extern const LevelScript local_warps_wf_1_[];
+extern const LevelScript local_area_wf_2_[];
+extern const LevelScript local_objects_wf_2_[];
+extern const LevelScript local_warps_wf_2_[];
+extern const LevelScript local_area_wf_3_[];
+extern const LevelScript local_objects_wf_3_[];
+extern const LevelScript local_warps_wf_3_[];
+extern const LevelScript level_wf_entry[];
 extern const GeoLayout wf_geo_0007E0[];
 extern const GeoLayout wf_geo_000820[];
 extern const GeoLayout wf_geo_000860[];
@@ -36,8 +57,6 @@ extern const GeoLayout wf_geo_000BA8[];
 extern const GeoLayout wf_geo_000BC8[];
 extern const GeoLayout wf_geo_000BE0[];
 extern const GeoLayout wf_geo_000BF8[];
-
-// leveldata
 extern const Gfx wf_seg7_dl_070050C8[];
 extern const Gfx wf_seg7_dl_070052B8[];
 extern const Gfx wf_seg7_dl_07005538[];
@@ -95,8 +114,5 @@ extern const Collision wf_seg7_collision_bullet_bill_cannon[];
 extern const Collision wf_seg7_collision_070102D8[];
 extern const MacroObject wf_seg7_macro_objs[];
 extern const struct MovtexQuadCollection wf_movtex_water[];
-
-// script
 extern const LevelScript level_wf_entry[];
-
 #endif

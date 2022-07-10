@@ -1,10 +1,33 @@
 #ifndef BBH_HEADER_H
 #define BBH_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_bbh_1_0x1200000[];
+extern Gfx DL_bbh_1_0xe086110[];
+extern Gfx DL_bbh_1_0xe09f240[];
+extern Gfx DL_bbh_1_0xe0a0540[];
+extern const Collision col_bbh_1_0xe0a1f40[];
+extern const GeoLayout Geo_bbh_2_0x12000b0[];
+extern Gfx DL_bbh_2_0xe0d4980[];
+extern Gfx DL_bbh_2_0xe0dc1c0[];
+extern Gfx DL_bbh_2_0xe0dc870[];
+extern const Collision col_bbh_2_0xe0dcba0[];
+extern const GeoLayout Geo_bbh_3_0x1200160[];
+extern Gfx DL_bbh_3_0xe10e190[];
+extern Gfx DL_bbh_3_0xe114310[];
+extern Gfx DL_bbh_3_0xe114730[];
+extern const Collision col_bbh_3_0xe114cd0[];
+extern const LevelScript level_bbh_custom_entry[];
+extern const LevelScript local_area_bbh_1_[];
+extern const LevelScript local_objects_bbh_1_[];
+extern const LevelScript local_warps_bbh_1_[];
+extern const LevelScript local_area_bbh_2_[];
+extern const LevelScript local_objects_bbh_2_[];
+extern const LevelScript local_warps_bbh_2_[];
+extern const LevelScript local_area_bbh_3_[];
+extern const LevelScript local_objects_bbh_3_[];
+extern const LevelScript local_warps_bbh_3_[];
+extern const LevelScript level_bbh_entry[];
 extern const GeoLayout geo_bbh_0005B0[];
 extern const GeoLayout geo_bbh_0005C8[];
 extern const GeoLayout geo_bbh_0005E0[];
@@ -46,8 +69,6 @@ extern const GeoLayout geo_bbh_000E40[];
 extern const GeoLayout geo_bbh_000E80[];
 extern const GeoLayout geo_bbh_000EB0[];
 extern const GeoLayout geo_bbh_000F00[];
-
-// leveldata
 extern const Gfx bbh_seg7_dl_070075A8[];
 extern const Gfx bbh_seg7_dl_07007940[];
 extern const Gfx bbh_seg7_dl_07007B90[];
@@ -107,8 +128,5 @@ extern const Collision bbh_seg7_collision_merry_go_round[];
 extern const Collision bbh_seg7_collision_coffin[];
 extern const struct MovtexQuadCollection bbh_movtex_merry_go_round_water_entrance[];
 extern const struct MovtexQuadCollection bbh_movtex_merry_go_round_water_side[];
-
-// script
 extern const LevelScript level_bbh_entry[];
-
 #endif
