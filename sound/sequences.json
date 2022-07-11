@@ -14,7 +14,8 @@
     "07_level_boss_koopa": ["12"],
 	"08_Seq_SR6_custom": ["0E"],
     "08_level_snow": null,
-    "09_level_slide": ["0D"],
+        "09_Seq_SR6_custom": ["0F"]
+    "09_level_slide": null,
 	"0A_Seq_SR6_custom": ["21"],
     "0A_level_spooky": null,
 	"0B_Seq_SR6_custom": ["14_piranha_music_box"],
