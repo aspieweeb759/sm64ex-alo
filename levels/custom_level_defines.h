@@ -1,1 +1,1 @@
-// Replace with RM2C Output after exporting a level
+DEFINE_LEVEL(castle_grounds,LEVEL_CASTLE_GROUNDS)
