@@ -7,6 +7,7 @@
 #include "graph_node.h"
 #include "behavior_script.h"
 #include "behavior_data.h"
+#include "game/game_init.h"
 #include "game/memory.h"
 #include "game/object_helpers.h"
 #include "game/macro_special_objects.h"
@@ -376,6 +377,11 @@ static struct Surface *read_surface_data(s16 *vertexData, s16 **vertexIndices) {
     nz *= mag;
 
     surface = alloc_surface();
+
+    vec3s_copy(surface->prevVertex1, surface->vertex1);
+    vec3s_copy(surface->prevVertex2, surface->vertex2);
+    vec3s_copy(surface->prevVertex3, surface->vertex3);
+    surface->modifiedTimestamp = gGlobalTimer;
 
     surface->vertex1[0] = x1;
     surface->vertex2[0] = x2;

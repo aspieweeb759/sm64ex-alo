@@ -1,5 +1,6 @@
 #include <PR/ultratypes.h>
 
+#include "engine/math_util.h"
 #include "game/memory.h"
 #include "game/segment2.h"
 #include "game/segment7.h"

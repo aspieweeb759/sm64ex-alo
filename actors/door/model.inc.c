@@ -14,12 +14,12 @@ static const Lights1 door_seg3_lights_03009CF8 = gdSPDefLights1(
 
 // 0x03009D10
 ALIGNED8 static const Texture door_seg3_texture_03009D10[] = {
-#include "actors/door/polished_wooden_door.rgba16.inc.c"
+#include "actors/door/castle_door_0_star_geo_0x3009d10_custom.rgba16.inc.c"
 };
 
 // 0x0300AD10
 ALIGNED8 static const Texture door_seg3_texture_0300AD10[] = {
-#include "actors/door/polished_wooden_door_overlay.rgba16.inc.c"
+#include "actors/door/castle_door_0_star_geo_0x300ad10_custom.rgba16.inc.c"
 };
 
 // 0x0300BD10
@@ -69,12 +69,12 @@ ALIGNED8 static const Texture door_seg3_texture_03011D10[] = {
 
 // 0x03012510
 ALIGNED8 static const Texture door_seg3_texture_03012510[] = {
-#include "actors/door/one_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_1_star_geo_0x3012510_custom.rgba16.inc.c"
 };
 
 // 0x03012D10
 ALIGNED8 static const Texture door_seg3_texture_03012D10[] = {
-#include "actors/door/three_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_3_stars_geo_0x3012d10_custom.rgba16.inc.c"
 };
 
 // 0x03013510

@@ -125,7 +125,7 @@ gsDPLoadSync(),
 gsSPLight(&Light_Flipswitch_Panel_MOP_0x5fa020.col, 1),
 gsSPLight(&Light_Flipswitch_Panel_MOP_0x5fa028.col, 2),
 gsSPVertex(VB_Flipswitch_Panel_MOP_0x5fa830, 15, 0),
-gsDPSetTextureImage(0, 2, 1, Flipswitch_Panel_MOP__texture_005FA030),
+gsDPSetTextureImage(0, 2, 1, Flipswitch_Panel_MOP__texture_005FA030), // Blue ? Mark Panel
 gsDPSetTile(0, 2, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0),
 gsDPLoadSync(),
 gsDPLoadBlock(7, 0, 0, 1023, 256),

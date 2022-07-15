@@ -29,7 +29,7 @@ extern u8 gGfxSPTaskStack[];
 #ifdef TARGET_N64
 #define GFX_NUM_POOLS 2
 #else
-#define GFX_NUM_POOLS 1
+#define GFX_NUM_POOLS 4
 #endif
 
 extern struct GfxPool gGfxPools[GFX_NUM_POOLS];

@@ -28,12 +28,12 @@ ALIGNED8 static const Texture exclamation_box_seg8_texture_08014E28[] = {
 
 // 0x08015E28
 ALIGNED8 static const Texture exclamation_box_seg8_texture_08015E28[] = {
-#include "actors/exclamation_box/wing_cap_box_front.rgba16.inc.c"
+#include "actors/exclamation_box/exclamation_box_geo_0x8015e28_custom.rgba16.inc.c"
 };
 
 // 0x08016628
 ALIGNED8 static const Texture exclamation_box_seg8_texture_08016628[] = {
-#include "actors/exclamation_box/wing_cap_box_side.rgba16.inc.c"
+#include "actors/exclamation_box/exclamation_box_geo_0x8016628_custom.rgba16.inc.c"
 };
 
 // 0x08017628

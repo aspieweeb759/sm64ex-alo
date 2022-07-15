@@ -1,5 +1,5 @@
 #include "model.inc.h"
-Vtx VB_Sandblock_MOP_0x3021b54[] = {
+Vtx VB_SandBlock_MOP_0x3021b54[] = {
 {{{ 150, 146, 166 }, 0, { 3674, 207 }, { 0, 0, 127, 255}}},
 {{{ -150, -171, 166 }, 0, { 2852, -183 }, { 0, 0, 127, 255}}},
 {{{ 150, -171, 166 }, 0, { 3436, -409 }, { 0, 0, 127, 255}}},
@@ -17,7 +17,7 @@ Vtx VB_Sandblock_MOP_0x3021b54[] = {
 {{{ -150, 171, 150 }, 0, { 3060, 486 }, { 0, 127, 0, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x3021c44[] = {
+Vtx VB_SandBlock_MOP_0x3021c44[] = {
 {{{ -150, 171, -150 }, 0, { 3285, 1070 }, { 0, 127, 0, 255}}},
 {{{ 150, 171, 150 }, 0, { 3644, 261 }, { 0, 127, 0, 255}}},
 {{{ 150, 171, -150 }, 0, { 3869, 845 }, { 0, 127, 0, 255}}},
@@ -35,7 +35,7 @@ Vtx VB_Sandblock_MOP_0x3021c44[] = {
 {{{ 166, 146, 150 }, 0, { 3720, 189 }, { 89, 0, 89, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x3021d34[] = {
+Vtx VB_SandBlock_MOP_0x3021d34[] = {
 {{{ 166, -171, 150 }, 0, { 3482, -426 }, { 89, 0, 89, 255}}},
 {{{ 150, 146, 166 }, 0, { 3674, 207 }, { 89, 0, 89, 255}}},
 {{{ 150, -171, 166 }, 0, { 3436, -409 }, { 89, 0, 89, 255}}},
@@ -53,7 +53,7 @@ Vtx VB_Sandblock_MOP_0x3021d34[] = {
 {{{ -166, -171, 150 }, 0, { 2438, 750 }, { 167, 0, 89, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x3021e24[] = {
+Vtx VB_SandBlock_MOP_0x3021e24[] = {
 {{{ -166, 146, 150 }, 0, { 3054, 513 }, { 167, 0, 89, 255}}},
 {{{ -150, -171, 166 }, 0, { 2420, 705 }, { 167, 0, 89, 255}}},
 {{{ -150, 146, 166 }, 0, { 3036, 467 }, { 167, 0, 89, 255}}},
@@ -71,7 +71,7 @@ Vtx VB_Sandblock_MOP_0x3021e24[] = {
 {{{ -150, 171, -150 }, 0, { 3337, 1074 }, { 175, 54, 175, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x3021f14[] = {
+Vtx VB_SandBlock_MOP_0x3021f14[] = {
 {{{ -150, 146, -166 }, 0, { 3360, 1133 }, { 167, 0, 167, 255}}},
 {{{ -166, -171, -150 }, 0, { 3552, 1767 }, { 167, 0, 167, 255}}},
 {{{ -166, 146, -150 }, 0, { 3314, 1150 }, { 167, 0, 167, 255}}},
@@ -89,7 +89,7 @@ Vtx VB_Sandblock_MOP_0x3021f14[] = {
 {{{ -150, 146, -166 }, 0, { 3360, 1133 }, { 0, 70, 151, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x3022004[] = {
+Vtx VB_SandBlock_MOP_0x3022004[] = {
 {{{ 150, 146, -166 }, 0, { 3944, 908 }, { 0, 70, 151, 255}}},
 {{{ -150, 171, -150 }, 0, { 3337, 1074 }, { 0, 70, 151, 255}}},
 {{{ 150, 171, -150 }, 0, { 3921, 849 }, { 0, 70, 151, 255}}},
@@ -107,7 +107,7 @@ Vtx VB_Sandblock_MOP_0x3022004[] = {
 {{{ 166, 146, -150 }, 0, { 3980, 827 }, { 127, 0, 0, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x30220f4[] = {
+Vtx VB_SandBlock_MOP_0x30220f4[] = {
 {{{ 166, -171, -150 }, 0, { 4596, 589 }, { 127, 0, 0, 255}}},
 {{{ 166, 146, 150 }, 0, { 3755, 243 }, { 127, 0, 0, 255}}},
 {{{ 166, -171, 150 }, 0, { 4371, 5 }, { 127, 0, 0, 255}}},
@@ -125,7 +125,7 @@ Vtx VB_Sandblock_MOP_0x30220f4[] = {
 {{{ -150, -171, -166 }, 0, { 2643, 1379 }, { 13, 131, 13, 255}}},
 };
 
-Vtx VB_Sandblock_MOP_0x30221e4[] = {
+Vtx VB_SandBlock_MOP_0x30221e4[] = {
 {{{ 0, -137, 0 }, 0, { 2219, 1170 }, { 24, 132, 0, 255}}},
 {{{ -166, -171, 150 }, 0, { 2438, 750 }, { 24, 132, 0, 255}}},
 {{{ -166, -171, -150 }, 0, { 2663, 1334 }, { 24, 132, 0, 255}}},
@@ -143,109 +143,109 @@ Vtx VB_Sandblock_MOP_0x30221e4[] = {
 {{{ 0, 0, 0 }, 0, { 0, 0 }, { 0, 0, 0, 255}}},
 };
 
-const Light_t Light_Sandblock_MOP_0x3021344 = {
+const Light_t Light_SandBlock_MOP_0x3021344 = {
 { 255, 255, 255}, 0, { 255, 255, 255}, 0, { 127, 127, 127}, 0
 };
 
-const Ambient_t Light_Sandblock_MOP_0x302134c = {
+const Ambient_t Light_SandBlock_MOP_0x302134c = {
 {127, 127, 127}, 0, {127, 127, 127}, 0
 };
 
-const Gfx DL_Sandblock_MOP_0x30222d4[] = {
+const Gfx DL_SandBlock_MOP_0x30222d4[] = {
 gsDPPipeSync(),
 gsSPGeometryMode(0, 0),
 gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, SHADE, TEXEL0, 0, SHADE, 0, 0, 0, 0, SHADE),
 gsSPTexture(65535, 65535, 0, 0, 1),
 gsDPTileSync(),
 gsDPLoadSync(),
-gsSPLight(&Light_Sandblock_MOP_0x3021344.col, 1),
-gsSPLight(&Light_Sandblock_MOP_0x302134c.col, 2),
-gsDPSetTextureImage(0, 2, 1, Sandblock_MOP__texture_03021354),
+gsSPLight(&Light_SandBlock_MOP_0x3021344.col, 1),
+gsSPLight(&Light_SandBlock_MOP_0x302134c.col, 2),
+gsDPSetTextureImage(0, 2, 1, SandBlock_MOP__texture_03021354),
 gsDPSetTile(0, 2, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0),
 gsDPLoadSync(),
 gsDPLoadBlock(7, 0, 0, 1023, 256),
 gsDPPipeSync(),
 gsDPSetTile(0, 2, 8, 0, 0, 0, 0, 5, 0, 0, 5, 0),
 gsDPSetTileSize(0, 0, 0, 124, 124),
-gsSPVertex(VB_Sandblock_MOP_0x3021b54, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021b54, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021b54, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021b54, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021b54, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021b54, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021b54, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021b54, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021b54, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021b54, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021c44, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021c44, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021c44, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021c44, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021c44, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021c44, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021c44, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021c44, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021c44, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021c44, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021d34, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021d34, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021d34, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021d34, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021d34, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021d34, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021d34, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021d34, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021d34, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021d34, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021e24, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021e24, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021e24, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021e24, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021e24, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021e24, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021e24, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021e24, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021e24, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021e24, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021f14, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021f14, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021f14, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021f14, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021f14, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021f14, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021f14, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021f14, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3021f14, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3021f14, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3022004, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3022004, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3022004, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3022004, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3022004, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3022004, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3022004, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3022004, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x3022004, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x3022004, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30220f4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30220f4, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30220f4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30220f4, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30220f4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30220f4, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30220f4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30220f4, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30220f4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30220f4, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30221e4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30221e4, 15, 0),
 gsSP1Triangle(0, 1, 2, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30221e4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30221e4, 15, 0),
 gsSP1Triangle(3, 4, 5, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30221e4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30221e4, 15, 0),
 gsSP1Triangle(6, 7, 8, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30221e4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30221e4, 15, 0),
 gsSP1Triangle(9, 10, 11, 0),
-gsSPVertex(VB_Sandblock_MOP_0x30221e4, 15, 0),
+gsSPVertex(VB_SandBlock_MOP_0x30221e4, 15, 0),
 gsSP1Triangle(12, 13, 14, 0),
 gsSPTexture(65535, 65535, 0, 0, 0),
 gsSPEndDisplayList(),

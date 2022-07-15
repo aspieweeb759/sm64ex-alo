@@ -1,15 +1,15 @@
-// Mario
+// Star Revenge 6.5 Luigi
 
 // 0x04000000 # solid color blue - butt, left thigh, right thigh - all poly types
 static const Lights1 mario_blue_lights_group = gdSPDefLights1(
     0x00, 0x00, 0x7f,
-    0x00, 0x00, 0xff, 0x28, 0x28, 0x28
+    0x7f, 0x00, 0xff, 0x28, 0x28, 0x28
 );
 
-// 0x04000018 # solid color red - left & right arm, torso (tshirt part), caps - all poly types
+// 0x04000018 # solid color green - left & right arm, torso (tshirt part), caps - all poly types
 static const Lights1 mario_red_lights_group = gdSPDefLights1(
-    0x7f, 0x00, 0x00,
-    0xff, 0x00, 0x00, 0x28, 0x28, 0x28
+    0x0f, 0x5e, 0x00,
+    0x00, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x04000030 # solid color white - metal butt & left thigh - normal left & right hand closed & open (with cap too) and all wings - all poly types
@@ -37,99 +37,99 @@ static const Lights1 mario_brown2_lights_group = gdSPDefLights1(
 );
 
 // 0x04000090
-ALIGNED8 static const u8 mario_texture_metal[] = {
+ALIGNED8 static const Texture mario_texture_metal[] = {
 #include "actors/mario/mario_metal.rgba16.inc.c"
 };
 
 // 0x04001090
-ALIGNED8 static const u8 mario_texture_yellow_button[] = {
+ALIGNED8 static const Texture mario_texture_yellow_button[] = {
 #include "actors/mario/mario_overalls_button.rgba16.inc.c"
 };
 
 // 0x04001890
-ALIGNED8 static const u8 mario_texture_m_logo[] = {
+ALIGNED8 static const Texture mario_texture_m_logo[] = {
 #include "actors/mario/mario_logo.rgba16.inc.c"
 };
 
 // 0x04002090
-ALIGNED8 static const u8 mario_texture_hair_sideburn[] = {
+ALIGNED8 static const Texture mario_texture_hair_sideburn[] = {
 #include "actors/mario/mario_sideburn.rgba16.inc.c"
 };
 
 // 0x04002890
-ALIGNED8 static const u8 mario_texture_mustache[] = {
+ALIGNED8 static const Texture mario_texture_mustache[] = {
 #include "actors/mario/mario_mustache.rgba16.inc.c"
 };
 
 // 0x04003090
-ALIGNED8 static const u8 mario_texture_eyes_front[] = {
+ALIGNED8 static const Texture mario_texture_eyes_front[] = {
 #include "actors/mario/mario_eyes_center.rgba16.inc.c"
 };
 
 // 0x04003890
-ALIGNED8 static const u8 mario_texture_eyes_half_closed[] = {
+ALIGNED8 static const Texture mario_texture_eyes_half_closed[] = {
 #include "actors/mario/mario_eyes_half_closed.rgba16.inc.c"
 };
 
 // 0x04004090
-ALIGNED8 static const u8 mario_texture_eyes_closed[] = {
+ALIGNED8 static const Texture mario_texture_eyes_closed[] = {
 #include "actors/mario/mario_eyes_closed.rgba16.inc.c"
 };
 
 // Unreferenced
 // 0x04004890
-ALIGNED8 static const u8 mario_texture_eyes_closed_unused1[] = {
+ALIGNED8 static const Texture mario_texture_eyes_closed_unused1[] = {
 #include "actors/mario/mario_eyes_closed_unused_0.rgba16.inc.c"
 };
 
 // Unreferenced
 // 0x04005090
-ALIGNED8 static const u8 mario_texture_eyes_closed_unused2[] = {
+ALIGNED8 static const Texture mario_texture_eyes_closed_unused2[] = {
 #include "actors/mario/mario_eyes_closed_unused_1.rgba16.inc.c"
 };
 
 // 0x04005890
-ALIGNED8 static const u8 mario_texture_eyes_right[] = {
+ALIGNED8 static const Texture mario_texture_eyes_right[] = {
 #include "actors/mario/mario_eyes_left_unused.rgba16.inc.c"
 };
 
 // 0x04006090
-ALIGNED8 static const u8 mario_texture_eyes_left[] = {
+ALIGNED8 static const Texture mario_texture_eyes_left[] = {
 #include "actors/mario/mario_eyes_right_unused.rgba16.inc.c"
 };
 
 // 0x04006890
-ALIGNED8 static const u8 mario_texture_eyes_up[] = {
+ALIGNED8 static const Texture mario_texture_eyes_up[] = {
 #include "actors/mario/mario_eyes_up_unused.rgba16.inc.c"
 };
 
 // 0x04007090
-ALIGNED8 static const u8 mario_texture_eyes_down[] = {
+ALIGNED8 static const Texture mario_texture_eyes_down[] = {
 #include "actors/mario/mario_eyes_down_unused.rgba16.inc.c"
 };
 
 // 0x04007890
-ALIGNED8 static const u8 mario_texture_eyes_dead[] = {
+ALIGNED8 static const Texture mario_texture_eyes_dead[] = {
 #include "actors/mario/mario_eyes_dead.rgba16.inc.c"
 };
 
 // 0x04008090
-ALIGNED8 static const u8 mario_texture_wings_half_1[] = {
+ALIGNED8 static const Texture mario_texture_wings_half_1[] = {
 #include "actors/mario/mario_wing.rgba16.inc.c"
 };
 
 // 0x04009090
-ALIGNED8 static const u8 mario_texture_wings_half_2[] = {
+ALIGNED8 static const Texture mario_texture_wings_half_2[] = {
 #include "actors/mario/mario_wing_tip.rgba16.inc.c"
 };
 
 // 0x0400A090
-ALIGNED8 static const u8 mario_texture_metal_wings_half_1[] = {
+ALIGNED8 static const Texture mario_texture_metal_wings_half_1[] = {
 #include "actors/mario/mario_metal_wing_unused.rgba16.inc.c"
 };
 
 // 0x0400B090
-ALIGNED8 static const u8 mario_texture_metal_wings_half_2[] = {
+ALIGNED8 static const Texture mario_texture_metal_wings_half_2[] = {
 #include "actors/mario/mario_metal_wing_tip_unused.rgba16.inc.c"
 };
 
@@ -6060,7 +6060,7 @@ const Gfx mario_right_hand_cap_wings_half_2_dl[] = {
 };
 
 // 0x0401B0E0 - 0x0401B138
-const Gfx mario_right_hand_cap_wings_intial_dl[] = {
+const Gfx mario_right_hand_cap_wings_initial_dl[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(G_CC_MODULATERGBFADEA, G_CC_MODULATERGBFADEA),
     gsSPClearGeometryMode(G_CULL_BACK | G_SHADING_SMOOTH),
@@ -6104,7 +6104,7 @@ const Gfx mario_right_hand_cap[] = {
 
 // 0x0401B1D8 - 0x0401B230
 const Gfx mario_right_hand_cap_wings[] = {
-    gsSPDisplayList(mario_right_hand_cap_wings_intial_dl),
+    gsSPDisplayList(mario_right_hand_cap_wings_initial_dl),
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mario_texture_wings_half_1),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -6132,7 +6132,7 @@ const Gfx mario_metal_right_hand_cap_shared_dl[] = {
 
 // 0x0401B278 - 0x0401B2D0
 const Gfx mario_metal_right_hand_cap_shared_dl_wings[] = {
-    gsSPDisplayList(mario_right_hand_cap_wings_intial_dl),
+    gsSPDisplayList(mario_right_hand_cap_wings_initial_dl),
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mario_texture_metal_wings_half_1),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -6590,7 +6590,7 @@ const Gfx mario_wings_half_2_unused_dl[] = {
 };
 
 // 0x0401C6D8 - 0x0401C730
-const Gfx mario_cap_wings_unused_intial_dl[] = {
+const Gfx mario_cap_wings_unused_initial_dl[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(G_CC_MODULATERGBA, G_CC_MODULATERGBA),
     gsSPClearGeometryMode(G_CULL_BACK | G_SHADING_SMOOTH),
@@ -6656,7 +6656,7 @@ const Gfx mario_metal_cap_unused_dl[] = {
 
 // 0x0401C890 - 0x0401C8E8 # Unreferenced, unused like the duplicated cap, same case
 const Gfx mario_cap_wings_unused[] = {
-    gsSPDisplayList(mario_cap_wings_unused_intial_dl),
+    gsSPDisplayList(mario_cap_wings_unused_initial_dl),
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mario_texture_wings_half_1),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -6671,7 +6671,7 @@ const Gfx mario_cap_wings_unused[] = {
 
 // 0x0401C8E8 - 0x0401C940 # Unreferenced, unused like the duplicated cap, same case
 const Gfx mario_metal_cap_wings_unused[] = {
-    gsSPDisplayList(mario_cap_wings_unused_intial_dl),
+    gsSPDisplayList(mario_cap_wings_unused_initial_dl),
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mario_texture_metal_wings_half_1),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
