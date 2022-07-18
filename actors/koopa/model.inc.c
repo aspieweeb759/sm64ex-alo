@@ -63,7 +63,7 @@ ALIGNED8 static const Texture koopa_seg6_texture_06002648[] = {
 
 // 0x06002E48
 ALIGNED8 static const Texture koopa_seg6_texture_06002E48[] = {
-#include "actors/koopa/koopa_shell_back.rgba16.inc.c"
+#include "actors/koopa/koopa_with_shell_geo_0x6002e48_custom.rgba16.inc.c"
 };
 
 // 0x06003648
@@ -78,12 +78,12 @@ ALIGNED8 static const Texture koopa_seg6_texture_06003E48[] = {
 
 // 0x06004648
 ALIGNED8 static const Texture koopa_seg6_texture_06004648[] = {
-#include "actors/koopa/koopa_eyes_open.rgba16.inc.c"
+#include "actors/koopa/koopa_with_shell_geo_0x6004e48_custom.rgba16.inc.c"
 };
 
 // 0x06004E48
 ALIGNED8 static const Texture koopa_seg6_texture_06004E48[] = {
-#include "actors/koopa/koopa_eyes_closed.rgba16.inc.c"
+#include "actors/koopa/koopa_with_shell_geo_0x6004648_custom.rgba16.inc.c"
 };
 
 // 0x06005648

@@ -7,17 +7,17 @@ ALIGNED8 static const Texture amp_seg8_texture_08000F18[] = {
 
 // 0x08001318
 ALIGNED8 static const Texture amp_seg8_texture_08001318[] = {
-#include "actors/amp/amp_eyes.rgba16.inc.c"
+#include "actors/amp/amp_geo_0x8001318_custom.rgba16.inc.c"
 };
 
 // 0x08001B18
 ALIGNED8 static const Texture amp_seg8_texture_08001B18[] = {
-#include "actors/amp/amp_body.rgba16.inc.c"
+#include "actors/amp/amp_geo_0x8001b18_custom.rgba16.inc.c"
 };
 
 // 0x08002318
 ALIGNED8 static const Texture amp_seg8_texture_08002318[] = {
-#include "actors/amp/amp_mouth.rgba16.inc.c"
+#include "actors/amp/amp_geo_0x8002318_custom.rgba16.inc.c"
 };
 
 // 0x08002B18

@@ -38,7 +38,7 @@ static const Lights1 mario_brown2_lights_group = gdSPDefLights1(
 
 // 0x04000090
 ALIGNED8 static const u8 mario_texture_metal[] = {
-#include "actors/mario/mario_metal.rgba16.inc.c"
+#include "actors/mario/mario_geo_0x4000090_custom.rgba16.inc.c"
 };
 
 // 0x04001090

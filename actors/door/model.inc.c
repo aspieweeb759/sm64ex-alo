@@ -24,22 +24,22 @@ ALIGNED8 static const Texture door_seg3_texture_0300AD10[] = {
 
 // 0x0300BD10
 ALIGNED8 static const Texture door_seg3_texture_0300BD10[] = {
-#include "actors/door/rough_wooden_door.rgba16.inc.c"
+#include "actors/door/wooden_door_geo_0x300bd10_custom.rgba16.inc.c"
 };
 
 // 0x0300CD10
 ALIGNED8 static const Texture door_seg3_texture_0300CD10[] = {
-#include "actors/door/rough_wooden_door_overlay.rgba16.inc.c"
+#include "actors/door/wooden_door_geo_0x300cd10_custom.rgba16.inc.c"
 };
 
 // 0x0300D510
 ALIGNED8 static const Texture door_seg3_texture_0300D510[] = {
-#include "actors/door/metal_door.rgba16.inc.c"
+#include "actors/door/metal_door_geo_0x300d510_custom.rgba16.inc.c"
 };
 
 // 0x0300E510
 ALIGNED8 static const Texture door_seg3_texture_0300E510[] = {
-#include "actors/door/metal_door_overlay.rgba16.inc.c"
+#include "actors/door/metal_door_geo_0x300e510_custom.rgba16.inc.c"
 };
 
 // 0x0300ED10
@@ -64,17 +64,17 @@ ALIGNED8 static const Texture door_seg3_texture_03011510[] = {
 
 // 0x03011D10
 ALIGNED8 static const Texture door_seg3_texture_03011D10[] = {
-#include "actors/door/zero_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_0_star_geo_0x3011d10_custom.rgba16.inc.c"
 };
 
 // 0x03012510
 ALIGNED8 static const Texture door_seg3_texture_03012510[] = {
-#include "actors/door/one_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_1_star_geo_0x3012510_custom.rgba16.inc.c"
 };
 
 // 0x03012D10
 ALIGNED8 static const Texture door_seg3_texture_03012D10[] = {
-#include "actors/door/three_star_door_sign.rgba16.inc.c"
+#include "actors/door/castle_door_3_stars_geo_0x3012d10_custom.rgba16.inc.c"
 };
 
 // 0x03013510

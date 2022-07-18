@@ -414,7 +414,7 @@ ALIGNED8 static const Texture koopa_shell_seg8_texture_080274A0[] = {
 
 // 0x08027CA0
 ALIGNED8 static const Texture koopa_shell_seg8_texture_08027CA0[] = {
-#include "actors/koopa_shell/koopa_shell_back.rgba16.inc.c"
+#include "actors/koopa_shell/koopa_shell_geo_0x8027ca0_custom.rgba16.inc.c"
 };
 
 // 0x080284A0
