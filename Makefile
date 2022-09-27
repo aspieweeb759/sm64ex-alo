@@ -65,7 +65,7 @@ SUPER_MODE ?= 0
 LEVEL_SELECT ?= 0
 
 # Build for original N64 (no pc code)
-TARGET_N64 = 1
+TARGET_N64 ?= 0
 # Build and optimize for Raspberry Pi(s)
 TARGET_RPI ?= 0
 # Build for Emscripten/WebGL
@@ -123,7 +123,6 @@ CONTROLLER_API ?= SDL2
 RM2CPC:
 	$(info "Running make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1")
 	make -j4 TARGET_N64=0 TARGET_ARCH=native WINDOWS_BUILD=1 TARGET_GAME_CONSOLE=0 DEBUG=1 NODRAWINGDISTANCE=1
-
 
 ifeq ($(TARGET_WII_U),1)
   RENDER_API := WHB
@@ -191,6 +190,32 @@ ifeq ($(TARGET_WEB),0)
     endif
   endif
 endif
+
+# macOS overrides
+ifeq ($(HOST_OS),Darwin)
+OSX_BUILD := 1
+endif
+
+ifeq ($(OSX_BUILD),1)
+  # Using Homebrew?
+  ifeq ($(shell which brew >/dev/null 2>&1 && echo y),y)
+    OSX_GCC_VER = $(shell find `brew --prefix`/bin/gcc* | grep -oE '[[:digit:]]+' | sort -n | uniq | tail -1)
+    CC := gcc-$(OSX_GCC_VER)
+    CXX := g++-$(OSX_GCC_VER)
+    CPP := cpp-$(OSX_GCC_VER) -P
+  else
+    # Using MacPorts?
+    ifeq ($(shell test -d /opt/local/lib && echo y),y)
+      OSX_GCC_VER = $(shell find /opt/local/bin/gcc* | grep -oE '[[:digit:]]+' | sort -n | uniq | tail -1)
+      CC := gcc-mp-$(OSX_GCC_VER)
+      CXX := g++-mp-$(OSX_GCC_VER)
+      CPP := cpp-mp-$(OSX_GCC_VER) -P
+    else
+      $(error No suitable macOS toolchain found, have you installed Homebrew?)
+    endif
+  endif
+endif
+
 
 # MXE overrides
 
@@ -618,6 +643,11 @@ endif
 INCLUDE_CFLAGS := -I include -I $(BUILD_DIR) -I $(BUILD_DIR)/include -I src -I .
 ENDIAN_BITWIDTH := $(BUILD_DIR)/endian-and-bitwidth
 
+ifeq ($(OSX_BUILD),1)
+INCLUDE_CFLAGS += -I $(shell brew --prefix)/include -I .
+endif
+
+
 ifeq ($(TARGET_N64),1)
 IRIX_ROOT := tools/ido5.3_compiler
 
@@ -865,7 +895,6 @@ ifeq ($(WINDOWS_BUILD),1) # fixes compilation in MXE on Linux and WSL
   OBJCOPY := objcopy
   OBJDUMP := $(CROSS)objdump
 else ifeq ($(OSX_BUILD),1)
-  CPP := cpp-9 -P
   OBJDUMP := i686-w64-mingw32-objdump
   OBJCOPY := i686-w64-mingw32-objcopy
 else # Linux & other builds
